@@ -1,0 +1,18 @@
+<section class="home">
+    <div class="hero">
+        <h1>Hello There!</h1>
+        <p>
+
+            I'm <br><span class="tw">Abhishek Garg</span>, <br> a MERN stack developer striving to <br>make
+            the web a more beautiful place. I am currently exploring my interests in pool of technologies.
+        </p>
+        <button class="view-more" (click)="scrollToProjects()"> View my work</button>
+    </div>
+</section>
+
+<section class="container-flex">
+    <div class="description" *ngFor="let d of description" data-aos="fade-up" data-aos-duration="3000">
+        <h1>{{ d.header }}</h1>
+        <p>{{ d.des }}</p>
+    </div>
+</section>

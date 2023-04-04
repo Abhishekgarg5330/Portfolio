@@ -1,0 +1,37 @@
+<nav class="my-header" [ngClass]="{'page-scroll-header' : isScrolled}">
+  <div class="mobile-menu">
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+      </div>
+  </div>
+
+  <ul class="links-container">
+      <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/" fragment="Home">Home</a></li>
+      <li [routerLinkActive]="'active'"><a routerLink="" fragment="About">About</a></li>
+      <li [routerLinkActive]="'active'"><a routerLink="" fragment="Projects">Projects</a></li>
+      <!-- <ul class="links-container"> -->
+        <!-- <li (click)="scrollToSection('.home')">Home</li>
+        <li (click)="scrollToSection('.about')">About</li>
+        <li (click)="scrollToSection('.projects')">Projects</li> -->
+    <!-- </ul> -->
+  </ul>
+
+  <div class="socials">
+      <a href="https://github.com/Abhishekgarg5330"><img src="./assets/icons/icons8-github.svg" alt="github"></a>
+      <a href="https://www.linkedin.com/in/abhishek-garg-787095bb/"><img src="./assets/icons/icons8-linkedin-circled.svg" alt="linkedin"></a>
+      <a href="./assets/images/Abhishek Garg.pdf"><img style="width:24px;height:24px" src="./assets/icons/icons8-cv-32.png" alt="resume icon"></a>
+  </div>
+
+  <h1 class="header-name">Abhishek Garg</h1>
+</nav>
+
+<div class="component-container">
+  <app-home id="Home"></app-home>
+  <app-about id="About"></app-about>
+  <app-projects id="Projects"></app-projects>
+  <app-footer id="footer"></app-footer>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
+
